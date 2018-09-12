@@ -5,4 +5,4 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/cloud-hero-preliminary-iwmat/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/cloud-hero-preliminary-iwmat/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/cloud-hero-preliminary-iwmat/$TAG_NAME:$REVISION_ID"
