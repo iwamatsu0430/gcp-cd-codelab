@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/iwamatsu0430/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/iwamatsu0430/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/cloud-hero-preliminary-iwmat/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/cloud-hero-preliminary-iwmat/$TAG_NAME:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
   - "gcr.io/cloud-hero-preliminary-iwmat/$TAG_NAME:$REVISION_ID"
